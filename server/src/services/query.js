@@ -1,5 +1,3 @@
-// we want all our endpoints to be able to make use of this
-// 0 returns all thanks to mongo
 const DEFAULT_PAGE_NUMBER = 1;
 const DEFAULT_PAGE_LIMIT = 0;
 
