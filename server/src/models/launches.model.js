@@ -63,7 +63,6 @@ async function populateLaunches() {
     },
   });
   if (response.status !== 200) {
-    console.log("Problem downloading launch data");
     throw new Error("Launch data download failed");
   }
 
@@ -95,7 +94,7 @@ async function loadLaunchesData() {
     mission: "FalconSat",
   });
   if (firstLaunch) {
-    console.log("Launch data already loaded");
+    console.log("Launch data loaded");
   } else {
     await populateLaunches();
   }
